@@ -1,24 +1,25 @@
 import './App.css';
 import React, {useState, useRef} from "react";
-import {useSelector, useDispatch} from 'react-redux'
-const inputEl = { current: null };
+import Form from './components/Form'
+import Title from './components/Title'
+import List from './components/List'
 
-function App() {
-  const onButtonClick = () => {
-    inputEl.current.focus();
-    inputEl.current.click();
-  };
-  const onInputClick = () => {
-    alert("input clicked");
-  };
 
-  console.log({ inputEl });
+const App = () => {
+    const [title, setTitle] =useState('')
+    const [todo, setTodo] = useState([
+        {id: 0, title: ''}
+    ])
+    // console.log(todo.length)
 
-  return (
-    <>
-      <input onClick={onInputClick} ref={inputEl} type="text" />
-      <button onClick={onButtonClick}>Focus the input</button>
-    </>
-  );
-}
+    return (
+        <div>
+            <Title/>
+            <Form todo={todo} setTodo={setTodo}/>
+            <List todo={todo} />
+        </div>
+    );
+};
+
+
 export default App;
