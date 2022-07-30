@@ -6,17 +6,14 @@ import List from './components/List'
 
 
 const App = () => {
-    const [title, setTitle] =useState('')
-    const [todo, setTodo] = useState([
-        {id: 0, title: ''}
-    ])
+
     // console.log(todo.length)
 
     return (
         <div>
             <Title/>
-            <Form todo={todo} setTodo={setTodo}/>
-            <List todo={todo} />
+            <Form/>
+            <List/>
         </div>
     );
 };
