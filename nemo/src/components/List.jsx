@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import Todo from './Todo'
+import {Working , Done} from './Todo'
 
 const List = () => {
     const user = useSelector((state) => state.list);
@@ -9,9 +9,15 @@ const List = () => {
     return (
         <div>
             <h1>Working</h1>
-            {user.filter((value) => !value.isDone).map((value) => <Todo/>)}
+            <div style={{display: 'flex'}}>
+                <Working />
+            </div>
             <h1>Done</h1>
-            {user.filter((value) => value.isDone).map((value) => <Todo/>)}
+            <div style={{display: 'flex'}}>
+                <Done />
+            </div>
+            {/* {user.filter((value) => !value.isDone).map((value) => <Todo/>)} */}
+            {/* {user.filter((value) => value.isDone).map((value) => <Todo/>)} */}
         </div>
     );
 };

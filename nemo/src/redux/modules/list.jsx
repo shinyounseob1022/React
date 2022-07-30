@@ -3,12 +3,13 @@ const DELETE = "DELETE";
 const UPDATE = "UPDATE";
 
 //Action Creator
-export const addTitle = ({title, id, isDone}) => {
+export const addTitle = ({title, id, isDone, content}) => {
     return {
         type: TITLE ,
         title: title,
         id: id,
-        isDone
+        isDone,
+        content
     }
 } 
 
@@ -33,7 +34,7 @@ const initialState = [];
 const list = (state = initialState, action) => {
     switch(action.type){
         case TITLE:
-            const new_state = [...state, {title: action.title, id:action.id, isDone: action.isDone}]
+            const new_state = [...state, {title: action.title, id:action.id, isDone: action.isDone, content: action.content}]
             return new_state
         case DELETE:
             return state.filter((value) => value.id !== action.id)
