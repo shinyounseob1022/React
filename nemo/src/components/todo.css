@@ -1,0 +1,33 @@
+.todoBox {
+    width: 350px;
+    height: 150px;
+    border-radius: 10px;
+    border: 5px solid #008080;
+    text-align: center;
+    margin: 10px;
+}
+
+.completeBtn {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid red;
+    transition: 0.5s
+}
+
+.deleteBtn {
+    width: 100px;
+    height: 40px;
+    margin: 10px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: 1px solid #008080;
+    transition: 0.5s
+
+}
+
+.button__Box > button:hover {
+    transform: scale(1.1);
+}

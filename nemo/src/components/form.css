@@ -1,0 +1,46 @@
+.formBox {
+    background-color: #eeeeee;
+    width: 1160px;
+    margin: 20px auto;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.formBox__left {
+    display: flex;
+    align-items: center;
+}
+
+.formBox__left div {
+    align-items: center;
+
+}
+
+
+.input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 20px;
+    margin: 0 20px 0 10px;
+    text-align: center;
+}
+
+.addBtn {
+    background-color: #008080;
+    border: none;
+    width: 200px;
+    height: 40px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+    transition: 0.5s
+}
+
+.addBtn:hover {
+    transform: scale(1.1);
+}

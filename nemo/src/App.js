@@ -3,19 +3,10 @@ import React, {useState, useRef} from "react";
 import Form from './components/Form'
 import Title from './components/Title'
 import List from './components/List'
-
+import Router from "./shared/Router";
 
 const App = () => {
-
-    // console.log(todo.length)
-
-    return (
-        <div>
-            <Title/>
-            <Form/>
-            <List/>
-        </div>
-    );
+    return <Router />
 };
 
 

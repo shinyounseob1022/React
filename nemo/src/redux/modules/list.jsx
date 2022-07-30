@@ -1,6 +1,7 @@
 const TITLE = "TITLE";
 const DELETE = "DELETE";
 const UPDATE = "UPDATE";
+const DETAIL = "DETAIL";
 
 //Action Creator
 export const addTitle = ({title, id, isDone, content}) => {
@@ -27,6 +28,7 @@ export const updateTitle = (id) => {
     }
 }
 
+
 const initialState = [];
 
 
@@ -40,6 +42,7 @@ const list = (state = initialState, action) => {
             return state.filter((value) => value.id !== action.id)
         case UPDATE:
             return state.map((value) => value.id == action.id ? {...value, isDone: !value.isDone} : value)
+
         default:
             return state
     }

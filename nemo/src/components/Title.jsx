@@ -1,9 +1,11 @@
 import React from 'react';
-
+import styled from "styled-components";
+import './title.css'
 const Title = () => {
     return (
-        <header>
-            <h3>Todo list를 만들자</h3>
+        <header className="header">
+            <span>My Todo list</span>
+            <span>React</span>
         </header>
     );
 };

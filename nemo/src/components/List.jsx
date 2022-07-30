@@ -1,19 +1,17 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import {Working , Done} from './Todo'
+import './list.css'
 
 const List = () => {
-    const user = useSelector((state) => state.list);
-    console.log('user:', user)
-    
     return (
-        <div>
-            <h1>Working</h1>
-            <div style={{display: 'flex'}}>
+        <div class="createSpace">
+            <h2>Working</h2>
+            <div className= "box Working" style={{display: 'flex'}}>
                 <Working />
             </div>
-            <h1>Done</h1>
-            <div style={{display: 'flex'}}>
+            <h2>Done</h2>
+            <div className= "box Done" style={{display: 'flex'}}>
                 <Done />
             </div>
             {/* {user.filter((value) => !value.isDone).map((value) => <Todo/>)} */}

@@ -1,0 +1,10 @@
+.createSpace {
+    width: 1200px;
+    margin: auto;
+}
+
+.box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
