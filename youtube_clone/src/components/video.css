@@ -1,0 +1,15 @@
+
+
+.video__title {
+    margin-left : 10px;
+}
+
+.video__channelName {
+    margin: 10px;
+}
+
+.video__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
